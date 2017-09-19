@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="curriculum.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.js"></script>
 		</head>
 		<body>
             <main>
@@ -132,7 +132,18 @@ The programme is structured around four core areas, which are further divided in
 -->
             </main>
 
-<script type="text/javascript" src="burgermenu.js"></script>
+                <script src="jquery.js"></script>
+
+                <script>
+
+                    $('.menu-toggle').click(function() {
+
+                        $('.site-nav').toggleClass('site-nav--open');
+                        $(this).toggleClass('open');
+
+                    })
+
+                </script>
 
             <footer>
 
